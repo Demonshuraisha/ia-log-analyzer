@@ -1,12 +1,180 @@
-# Python virtual environment
+# Python virtual environment (consolidated and made explicit)
 env/
 venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+.pixi/ # For Pixi virtual envs
 
-# Environment variables
+# Environment variables (consolidated)
 .env
 .env.*
+.envrc # For direnv or similar
 
-# Other common Python ignores
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
 *.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+# .python-version (commented out as per GitHub template's advice for libraries)
+
+# pipenv
+# Pipfile.lock (commented out as inclusion is generally recommended)
+
+# UV
+# uv.lock (commented out as inclusion is generally recommended)
+
+# poetry
+# poetry.lock (commented out as inclusion is generally recommended)
+# poetry.toml (commented out as inclusion is generally recommended)
+
+# pdm
+# pdm.lock (commented out as inclusion is generally recommended)
+# pdm.toml (commented out as inclusion is generally recommended)
+.pdm-python
+.pdm-build/
+
+# pixi
+# pixi.lock (commented out as inclusion is generally recommended)
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm (uncomment to ignore)
+#.idea/
+
+# Abstra
+.abstra/
+
+# Visual Studio Code (uncomment to ignore)
+# .vscode/
+
+# Ruff stuff:
+.ruff_cache/
+
+# PyPI configuration file
+.pypirc
+
+# Cursor
+.cursorignore
+.cursorindexingignore
+
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+10af3c0f08a3e6d7b54a652d05781c9acf85ad94
+
+# Logs (already covered by *.log for Django, but good to have a general one too)
+# This one was duplicated, keeping the more general one from the start.
